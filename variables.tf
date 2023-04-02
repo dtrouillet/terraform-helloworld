@@ -25,16 +25,3 @@ variable "password" {
   description = "password for ssh"
 }
 
-variable "hosts_map" {
-  type = map(object({
-    host = string
-    username = string
-    password = string
-  }))
-  description = "hosts map"
-}
-
-variable "hosts_str" {
-  type = map(string)
-  description = "hosts string"
-}
